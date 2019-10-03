@@ -20,7 +20,7 @@ def self.clear_all
 end
 
 def self.print_all
- @@all.sort_by(){|dog| puts dog.namn}
+ @@all.sort_by(){|dog| puts dog.name}
 end
 
 
