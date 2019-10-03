@@ -11,10 +11,6 @@ def self.all
   @@all
 end
 
-def self.print_all
- self.all.each{|dog| puts "#{dog.name}"}
-end
-
 def self.save
   @@all << self
 end
@@ -22,5 +18,11 @@ end
 def self.clear_all
   @@all.clear
 end
+
+def self.print_all
+ self.sort_by(){|dog| puts dog.namn}
+end
+
+
 end
 
